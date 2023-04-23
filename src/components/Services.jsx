@@ -7,6 +7,7 @@ import engagementPhoto from '../assets/E1.JPG';
 import eventPhoto from '../assets/EV2.JPG';
 import portraitPhoto from '../assets/POT1.JPG';
 
+
 function Services() {
   const services = [
     {
@@ -48,15 +49,18 @@ function Services() {
   ];
 
   return (
-    <div className='bg-black'>
-      <h2 className="text-4xl font-bold pt-[32px] text-yellow-300 ">Our Services</h2>
+    <div className='bg-[#f0f0f0]'>
+    
+      <h2 className="text-4xl font-bold pt-[32px] text-black ">Our  Services </h2>
       
       <div className="flex flex-wrap justify-center  py-8  ">
       {services.map((service, index) => (
         <div
           key={index}
-          className="w-full sm:w-1/2 lg:w-1/4  flex border border-white m-[20px] rounded-xl bg-white "
+          className="w-full sm:w-1/2 lg:w-1/4  flex border border-[#fff] m-[20px] rounded-xl bg-[#fff]"
         >
+        
+
           <Link
             to={service.link}
             className=" p-4 flex-1 flex flex-col"

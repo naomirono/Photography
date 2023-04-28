@@ -18,7 +18,7 @@ const photos = [
 
 const Gallery = () => {
   return (
-    <div className="flex flex-wrap justify-center items-center gap-4 my-10">
+    <div className="flex flex-wrap justify-center items-center gap-4 my-12">
       {photos.map((photo) => (
         <img
           key={photo.src}

@@ -4,7 +4,7 @@ import familyPortrait from '../assets/F1.JPG';
 
 const photos = [
   { src: portraitPhoto, width: 'w-1/2', height: 'h-96' },
-  { src: familyPortrait, width: 'w-1/4', height: 'h-96' },
+  { src: familyPortrait, width: 'w-1/4', height: 'h-96'},
   { src: portraitPhoto, width: 'w-1/4', height: 'h-96' },
   { src: portraitPhoto, width: 'w-1/4', height: 'h-96' },
   { src: portraitPhoto, width: 'w-1/4', height: 'h-96' },
@@ -18,7 +18,9 @@ const photos = [
 
 const Gallery = () => {
   return (
-    <div className="flex flex-wrap justify-center items-center gap-4 my-12">
+      <div className='bg-gray-100'>
+          <h2 className="text-4xl font-bold pt-[32px] text-black ">Our <span className='text-orange-400'>Gallery</span>  </h2>
+    <div className="flex flex-wrap justify-center items-center gap-4 py-12">
       {photos.map((photo) => (
         <img
           key={photo.src}
@@ -27,6 +29,7 @@ const Gallery = () => {
           className={`object-cover ${photo.width} ${photo.height}`}
         />
       ))}
+    </div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 import CameraImage from '../assets/P4.png';
-import BgImage from '../assets/IMG_9791.JPG';
+import BgImage from '../assets/bg.JPG';
 
 
 const LandingPage = () => {
@@ -11,7 +11,7 @@ const LandingPage = () => {
       backgroundPosition: "center",
       backgroundSize: "cover",
     }}>
-      <div className="w-full md:w-1/2 flex flex-col justify-center bg-black bg-opacity-70 text-start">
+      <div className="w-full md:w-1/2 flex flex-col justify-center bg-black bg-opacity-80 text-start">
         <h1 className="text-4xl md:text-6xl font-bold mb-5 text-white mt-10 ml-6 md:mt-20 sm:pl-10">PHOTOGRAPHY</h1>
         <h1 className="text-3xl md:text-5xl font-bold mb-10 text-orange-400 ml-6 sm:pl-10">STUDIO</h1>
         <h6 className="text-2xl md:text-3xl font-medium text-white pl-6 md:pl-16 pb-6">For All Services</h6>
@@ -29,7 +29,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="w-full md:w-1/2 flex flex-col justify-center bg-black bg-opacity-70">
+      <div className="w-full md:w-1/2 flex flex-col justify-center bg-black bg-opacity-80">
         <img src={CameraImage} alt="Camera" className="w-full h-auto md:h-full" style={{ maxHeight: '600px' }} />
       </div>
     </div>

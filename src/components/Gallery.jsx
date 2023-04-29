@@ -5,6 +5,9 @@ import Photo4 from '../assets/POT1.JPG';
 import Photo5 from '../assets/F4.JPG';
 import Photo6 from '../assets/w5.JPG';
 import Photo7 from '../assets/w6.JPG';
+import Photo8 from '../assets/wed.jpg';
+import Photo9 from '../assets/E2.jpg';
+
 
 
 const photos = [
@@ -13,13 +16,13 @@ const photos = [
   { src: Photo3, width: 'w-1/4', height: 'h-96' },
   { src: Photo4, width: 'w-1/4', height: 'h-96' },
   { src: Photo5, width: 'w-1/4', height: 'h-96' },
-  { src: Photo4, width: 'w-1/4', height: 'h-96' },
+  { src: Photo9, width: 'w-1/4', height: 'h-96' },
   { src: Photo6, width: 'w-1/2', height: 'h-96' },
   { src: Photo4, width: 'w-1/4', height: 'h-96' },
   { src: Photo4, width: 'w-1/4', height: 'h-96' },
   { src: Photo4, width: 'w-1/4', height: 'h-96' },
-  { src: Photo7, width: 'w-1/2', height: 'h-96' },
-  { src: Photo5, width: 'w-1/4', height: 'h-96' },
+  { src: Photo8, width: 'w-3/4', height: 'h-96' },
+  
 ];
 
 const Gallery = () => {

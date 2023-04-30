@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import weddingPhoto from '../assets/W2.JPG';
+import weddingPhoto from '../assets/photo12.jpg';
 import familyPortrait from '../assets/F1.JPG';
-import commercialPhoto from '../assets/W1.JPG';
+import commercialPhoto from '../assets/commercial.JPG';
 import engagementPhoto from '../assets/E1.JPG';
-import eventPhoto from '../assets/EV2.JPG';
-import portraitPhoto from '../assets/POT1.JPG';
+import eventPhoto from '../assets/birthday.jpg';
+import portraitPhoto from '../assets/potrait.jpg';
 
 
 function Services() {

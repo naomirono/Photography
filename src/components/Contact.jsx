@@ -1,4 +1,4 @@
-import React, { useState , useRef} from 'react';
+import React, { useState } from 'react';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import ContactImage from '../assets/hero1.jpg'
 
@@ -6,36 +6,33 @@ const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [errors, setErrors] = useState({});
-
-  const validateForm = () => {
-    const newErrors = {};
-    if (!name) {
-      newErrors.name = 'Name is required';
-    }
-    if (!email) {
-      newErrors.email = 'Email is required';
-    }
-    if (!message) {
-      newErrors.message = 'Message is required';
-    }
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-  
-  
+  const [nameError, setNameError] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+  const [messageError, setMessageError] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Send form data to server or API here
-    // Reset form fields after submission
-    if (validateForm()) {
-    // Send form data to server or API here
+    // Validate form data here
+    if (name === '') {
+      setNameError(true);
+    } else {
+      setNameError(false);
+    }
+    if (email === '') {
+      setEmailError(true);
+    } else {
+      setEmailError(false);
+    }
+    if (message === '') {
+      setMessageError(true);
+    } else {
+      setMessageError(false);
+    }
+    // If form data is valid, send to server or API here
     // Reset form fields after submission
     setName('');
     setEmail('');
     setMessage('');
-  }
   };
 
   return (
@@ -56,7 +53,7 @@ const ContactForm = () => {
   
       <form onSubmit={handleSubmit}>
         <label htmlFor="name" className="font-medium mb-2 flex">
-          Name {errors.name && <span className="text-red-500">*</span>}
+          Name 
         </label>
         <input
           type="text"
@@ -64,13 +61,22 @@ const ContactForm = () => {
           name="name"
           value={name}
           placeholder="Enter your name"
-          onChange={(event) => setName(event.target.value)}
+          onChange={(event) => {
+            setName(event.target.value);
+            if (event.target.value === '') {
+              setNameError(true);
+            } else {
+              setNameError(false);
+            }
+          }}
           className="w-full input-black border rounded-md bg-transparent border-gray-500 p-3 mb-3"
         />
-        {errors.name && <p className="text-red-500">{errors.name}</p>}
+        {nameError && (
+          <p className="text-red-500 text-sm mb-3">Please enter your name</p>
+        )}
   
         <label htmlFor="email" className="font-medium mb-2 flex">
-          Email {errors.email && <span className="text-red-500">*</span>}
+          Email 
         </label>
         <input
           type="email"
@@ -78,13 +84,22 @@ const ContactForm = () => {
           name="email"
           value={email}
           placeholder="Enter your email"
-          onChange={(event) => setEmail(event.target.value)}
+          onChange={(event) => {
+            setEmail(event.target.value);
+            if (event.target.value === '') {
+              setEmailError(true);
+            } else {
+              setEmailError(false);
+            }
+          }}
           className="w-full input-black border rounded-md bg-transparent border-gray-500 p-3 mb-3"
         />
-        {errors.email && <p className="text-red-500">{errors.email}</p>}
+        {emailError && (
+          <p className="text-red-500 text-sm mb-3">Please enter a valid email address</p>
+        )}
   
         <label htmlFor="message" className="font-medium mb-2 flex">
-          Message {errors.message && <span className="text-red-500">*</span>}
+          Message 
         </label>
         <textarea
           id="message"
@@ -92,10 +107,19 @@ const ContactForm = () => {
           rows="5"
           placeholder="Enter your message"
           value={message}
-          onChange={(event) => setMessage(event.target.value)}
+          onChange={(event) => {
+            setMessage(event.target.value);
+            if (event.target.value === '') {
+              setMessageError(true);
+            } else {
+              setMessageError(false);
+            }
+          }}
           className="w-full input-black border rounded-md bg-transparent border-gray-500 p-3 mb-3"
         ></textarea>
-        {errors.message && <p className="text-red-500">{errors.message}</p>}
+        {messageError && (
+          <p className="text-red-500 text-sm mb-3">Please enter a message</p>
+        )}
   
         <button
           className="block bg-blue-700 hover:bg-blue-800 text-white w-full py-2 px rounded mt-4"

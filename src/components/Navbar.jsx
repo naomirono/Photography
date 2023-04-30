@@ -63,20 +63,14 @@ function Navbar() {
               >
                 Services
               </Link>
-              <Link
-                to="/pricing"
-                onClick={toggleMenu}
-                className="text-[18px] text-gray-400 hover:border-b-2 border-orange-400 hover:text-orange-400 px-3 py-2 rounded-md text-sm font-medium"
->
-Pricing
-</Link>
-<Link
+              
+           <Link
              to="/contact"
              onClick={toggleMenu}
              className="text-[18px] text-gray-400 hover:border-b-2 border-orange-400 hover:text-orange-400  px-3 py-2 rounded-md text-sm font-medium"
            >
-Contact
-</Link>
+            Contact
+          </Link>
 </div>
 </div>
 </div>

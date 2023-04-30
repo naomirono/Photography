@@ -53,7 +53,7 @@ const ContactForm = () => {
   
       <form onSubmit={handleSubmit}>
         <label htmlFor="name" className="font-medium mb-2 flex">
-          Name 
+          Name
         </label>
         <input
           type="text"

@@ -14,7 +14,7 @@ const Footer = () => {
             </Link>
         </div>
         <div className="flex items-center">
-          <nav className="mr-4">
+          <nav className="mr-4 md:mr-20">
             <Link
                 to="/"
                 className="text-gray-400 py-2 px-4  hover:text-orange-400 "

@@ -5,6 +5,7 @@ import Services from './components/Services'
 import { Routes, Route } from "react-router-dom";
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
+import ContactForm from './components/Contact';
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
     <Route path="/services" element={<Services/>} />
 
     <Route path="/portfolio" element={<Gallery/>} />
+
+    <Route path="/contact" element={<ContactForm/>} />
 
     
     </Routes>

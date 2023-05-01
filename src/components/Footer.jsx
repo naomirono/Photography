@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
-import LogoImage from '../assets/logo4.png';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -8,7 +7,7 @@ const Footer = () => {
     <footer className="bg-black text-gray-300 py-4">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center  md:mb-0">
-        <img className="h-16 w-22 mr-2 filter contrast-125 brightness-110 pb-2 " src={LogoImage} alt="Logo Image" />
+        <img className="h-16 w-22 mr-2 filter contrast-125 brightness-110 pb-2 " src='https://myretrobucket.s3.eu-north-1.amazonaws.com/Logo4.png' alt="Logo Image" />
             <Link to="/" className="text-2xl font-bold">
               <span className="text-gray-400">PHOTO</span><span className="text-orange-400">STUDIO</span>
             </Link>

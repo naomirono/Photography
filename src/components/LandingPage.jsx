@@ -1,13 +1,11 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
-import CameraImage from '../assets/P4.png';
-import BgImage from '../assets/bg.JPG';
 
 
 const LandingPage = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row justify-between h-auto md:h-[100vh] background bg-cover bg-no-repeat" style={{
-      backgroundImage: `url(${BgImage})`,
+      backgroundImage: `url('https://myretrobucket.s3.eu-north-1.amazonaws.com/bg.jpg')`,
       backgroundPosition: "center",
       backgroundSize: "cover",
     }}>
@@ -30,7 +28,7 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="w-full md:w-1/2 flex flex-col justify-center bg-black bg-opacity-80 mt-20">
-        <img src={CameraImage} alt="Camera" className="w-full h-auto md:h-full" style={{ maxHeight: '600px' }} />
+        <img src='https://myretrobucket.s3.eu-north-1.amazonaws.com/P4.png' alt="Camera" className="w-full h-auto md:h-full" style={{ maxHeight: '600px' }} />
       </div>
     </div>
   );

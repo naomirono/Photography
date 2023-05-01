@@ -40,7 +40,7 @@ const ContactForm = () => {
         <div className="flex items-center justify-center p-4 rounded-2xl shadow-5xl border max-w-[1100px] mx-auto bg-white">
         <div className="w-1/3 md:block hidden">
   <img
-    src={ContactImage}
+    src='https://myretrobucket.s3.eu-north-1.amazonaws.com/hero1.JPG'
     alt="Your Image"
     className="w-full rounded-2xl"
   />

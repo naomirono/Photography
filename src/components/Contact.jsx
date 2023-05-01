@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
-import ContactImage from '../assets/hero1.jpg'
 
 const ContactForm = () => {
   const [name, setName] = useState('');

@@ -36,16 +36,16 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='bg-gray-100 py-14'>
-        <div className="flex items-center justify-center p-4 rounded-2xl shadow-5xl border max-w-[1100px] mx-auto  bg-white">
-    <div className="w-1/3">
-      <img
-        src={ContactImage}
-        alt="Your Image"
-        className="w-full rounded-2xl"
-      />
-    </div>
-    <div className="w-2/3 px-4 bg-white ">
+    <div className='bg-gray-100 py-14 mt-20 h-[89vh]'>
+        <div className="flex items-center justify-center p-4 rounded-2xl shadow-5xl border max-w-[1100px] mx-auto bg-white">
+        <div className="w-1/3 md:block hidden">
+  <img
+    src={ContactImage}
+    alt="Your Image"
+    className="w-full rounded-2xl"
+  />
+</div>
+    <div className="w-full md:w-2/3 lg:w-2/3 px-4 bg-white ">
       <h1 className="text-3xl block text-center font-semibold">
         Contact Us
       </h1>

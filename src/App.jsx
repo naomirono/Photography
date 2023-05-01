@@ -4,7 +4,7 @@ import Navbar from './components/Navbar'
 import Services from './components/Services'
 import { Routes, Route } from "react-router-dom";
 import Gallery from './components/Gallery';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import ContactForm from './components/Contact';
 
 
@@ -26,7 +26,7 @@ function App() {
     
     </Routes>
     
-      <Footer/>
+      {/* <Footer/> */}
       
       
     </div>

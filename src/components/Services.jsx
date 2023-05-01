@@ -55,7 +55,7 @@ function Services() {
   ];
 
   return (
-    <div className='bg-[#f0f0f0]'>
+    <div className='bg-gray-100 mt-20'>
     
       <h2 className="text-4xl font-bold pt-[32px] text-black ">Our <span className='text-orange-400'>Services</span>  </h2>
       

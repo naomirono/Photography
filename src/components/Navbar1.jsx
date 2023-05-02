@@ -40,7 +40,7 @@ const Navbar1 = () => {
         md-pl-0 pl-9 transition-all duration-500 ease-in ${open? 'top-20 opacity-100' : 'top-[-490px] md-opacity-100'}`}>
             {
                 Links.map((link)=>(
-                <li key={link.name} className="md:ml-8 text-[18px] md:my-0 my-10">
+                <li key={link.name} className="md:ml-8 text-[16px] md:my-0 my-10">
                     <Link to={link.link} className='text-gray-100 hover:border-b-2 border-orange-400 hover:text-orange-400 py-2 rounded-md duration-500' >{link.name}</Link>
                 </li>
 

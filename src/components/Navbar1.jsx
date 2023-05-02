@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import { FaCamera } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Button from './Button';
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
@@ -13,7 +12,11 @@ const Navbar1 = () => {
         {name: 'Contact', link: '/contact'}
     ]
 
-    let [open, setOpen]= useState(false)
+    let [open, setOpen]= useState(false);
+
+    const handleClick = () => {
+        setOpen(false);
+      };
 
   return (
     <div className='shadow-md w-full fixed top-0 left-0'>
@@ -23,7 +26,7 @@ const Navbar1 = () => {
                  src='https://myretrobucket.s3.eu-north-1.amazonaws.com/Logo4.png' 
                  alt="Logo Image" />
 
-            <Link to="/" className="text-2xl font-bold">
+            <Link to="/" className="text-xl font-bold">
               <span className="text-gray-400">PHOTO</span><span className="text-orange-400">STUDIO</span>
             </Link>
     </div>
@@ -41,12 +44,20 @@ const Navbar1 = () => {
             {
                 Links.map((link)=>(
                 <li key={link.name} className="md:ml-8 text-[16px] md:my-0 my-10">
-                    <Link to={link.link} className='text-gray-100 hover:border-b-2 border-orange-400 hover:text-orange-400 py-2 rounded-md duration-500' >{link.name}</Link>
+                    <Link 
+                    to={link.link} 
+                    onClick={handleClick}
+                    className='text-gray-100 hover:border-b-2 border-orange-400 hover:text-orange-400 py-2 rounded-md duration-500' >{link.name}</Link>
                 </li>
 
             ))
             }
-            <Button> Book Now</Button>
+            <Link 
+            to="/contact"
+            onClick={handleClick}>
+        <Button>Book Now</Button>
+      </Link>
+            
         </ul>
     </div>
 

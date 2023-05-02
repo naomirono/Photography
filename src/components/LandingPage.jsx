@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 
 const LandingPage = () => {
@@ -18,7 +19,10 @@ const LandingPage = () => {
         </p>
 
         <div className="flex flex-col md:flex-row justify-between items-center mt-10 md:mt-20 ml-6 md:ml-16">
-          <button className="bg-orange-400 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-3xl mb-4 md:mb-0">Book Now</button>
+        <Link to="/contact">
+        <button className="bg-orange-400 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-3xl mb-4 md:mb-0">Book Now</button>
+        </Link>
+          
           <div className='flex mt-4 md:mt-0'>
             <FaFacebook className="text-2xl md:text-4xl text-blue-500 hover:text-blue-700 cursor-pointer m-2 md:m-4 bg-white rounded-full p-1" />
             <FaTwitter className="text-2xl md:text-4xl text-blue-500 hover:text-blue-700 cursor-pointer m-2 md:m-4 bg-white rounded-full p-1" />

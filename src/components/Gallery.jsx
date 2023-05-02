@@ -17,7 +17,7 @@ const photos = [
 const Gallery = () => {
   return (
       <div className='bg-gray-100 mt-20'>
-          <h2 className="text-4xl font-bold pt-[32px] text-black ">Our <span className='text-orange-400'>Gallery</span>  </h2>
+          <h2 className="text-4xl font-bold pt-[32px] text-black text-center">Our <span className='text-orange-400'>Gallery</span>  </h2>
     <div className="flex flex-wrap justify-center items-center gap-4 py-12 px-4">
     {photos.map((photo, index) => (
           <img

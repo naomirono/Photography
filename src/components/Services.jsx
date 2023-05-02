@@ -50,9 +50,9 @@ function Services() {
   return (
     <div className='bg-gray-100 mt-20'>
     
-      <h2 className="text-4xl font-bold pt-[32px] text-black ">Our <span className='text-orange-400'>Services</span>  </h2>
+      <h2 className="text-4xl font-bold pt-[32px] text-black text-center">Our <span className='text-orange-400'>Services</span>  </h2>
       
-      <div className="flex flex-wrap justify-center  py-8  ">
+      <div className="flex flex-wrap justify-center  py-8 text-center ">
       {services.map((service, index) => (
         <div
           key={index}

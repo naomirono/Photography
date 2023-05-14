@@ -15,7 +15,7 @@ const LandingPage = () => {
         <h1 className="text-3xl md:text-5xl font-bold mb-10 text-orange-400 ml-6 sm:pl-10">STUDIO</h1>
         <h6 className="text-2xl md:text-3xl font-medium text-white pl-6 md:pl-16 pb-6">For All Services</h6>
         <p className="text-gray-400 ml-6 md:ml-16 text-lg md:text-xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae velit vel arcu ultricies lobortis. Donec quis consectetur purus. Nam in pharetra ipsum, vel placerat eros.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae velit vel arcu ultricies lobortis. Donec quis consectetur purus. Nam in pharetra ipsum, vel placerat eros.
         </p>
 
         <div className="flex flex-col md:flex-row justify-between items-center mt-10 md:mt-20 ml-6 md:ml-16">
